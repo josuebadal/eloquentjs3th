@@ -5,3 +5,6 @@ let tamañoCambiante = {
 };
 console.log(tamañoCambiante.tamaño);
 console.log(tamañoCambiante.tamaño);
+
+
+//pba comentario
