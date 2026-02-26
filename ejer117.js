@@ -40,3 +40,12 @@ let matriz = new MatrizSimetrica(3, (x, y) => `${x},${y}`);
 
 console.log(matriz.get(2, 1));  // debería reflejar
 console.log(matriz.get(1, 2));  // mismo valor
+
+console.log(
+new MatrizSimetrica(2) instanceof MatrizSimetrica);
+
+console.log(new MatrizSimetrica(2) instanceof Matriz);
+
+console.log(new Matriz(2,2)instanceof MatrizSimetrica);
+
+console.log([1] instanceof Array);
