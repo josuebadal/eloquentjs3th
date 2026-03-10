@@ -20,11 +20,39 @@ class Group {
         }
         return group;
     }
+    [Symbol.iterator](){
+        return new GroupIterator(this.#members);
+    }
 }
-let group = Group.from([10,20]);
-console.log(group.has(10));
 
-console.log(group.has(30));
-group.add(10);
-group.delete(10);
-console.log(group.has(10));
+class GroupIterator{
+    #members;
+    #position;
+
+constructor(members){
+    this.#members = members;
+    this.#position = 0;
+}
+
+next(){
+    if (this.#position >= this.#members.length){
+       return {done: true}; 
+    }else {
+        let result = {value: this.#members[this.#position],
+            done: false};
+     this.#position++;
+     return result;
+    }
+  }
+}
+for (let value of Group.from(["a","b","c"])){
+     console.log(value);
+}
+
+//let group = Group.from([10,20]);
+//console.log(group.has(10));
+
+//console.log(group.has(30));
+//group.add(10);
+//group.delete(10);
+//console.log(group.has(10));
