@@ -20,3 +20,15 @@ function robotAleatorio(estado){
     return {direccion: eleccionAleatoria(grafoCamino[estado.lugar])};
 }
 
+EstadoPueblo.aleatorio = function(numeroDePaquetes = 5){
+    let paquetes = [];
+    for (let i = 0; i < numeroDePaquetes; i++){
+        let direccion = eleccionAleatoria(Object.keys(grafoCamino));
+        let lugar;
+        do {
+            lugar = eleccionAleatoria(Object.keys(grafoCamino));
+        } while (lugar == direccion);
+        paquetes.push({lugar, direccion});
+    }
+    return new EstadoPueblo("Oficina de Correos", paquetes);
+};
