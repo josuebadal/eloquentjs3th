@@ -32,3 +32,43 @@ EstadoPueblo.aleatorio = function(numeroDePaquetes = 5){
     }
     return new EstadoPueblo("Oficina de Correos", paquetes);
 };
+
+const rutaCorreo = [
+"Casa de Alicia", "Cabaña", "Casa de Alicia", "Casa de Bob",
+"Ayuntamiento", "Casa de Daria", "Casa de Ernie",
+"GCasa de Grete", "Tienda", "Casa de Grete", "Granja",
+"Mercado", "Oficina de Correos"
+];
+
+function robotRuta(estado, memoria){
+    if (memoria.length == 0){
+        memoria = rutaCorreo;
+    }
+    return {direccion: memoria[0], memoria: memoria.slice
+        (1)};
+}
+
+function encontrarRuta(grafo,desde,hasta){
+    let trabajo = [{donde: desde, ruta:[]}];
+    for (let i = 0; i < trabajo.length; i++){
+        let {donde,ruta} = trabajo[i];
+        for (let lugar of grafo[donde]){
+            if (lugar == hasta) return ruta.concat(lugar);
+            if (!trabajo.some(w => w.donde == lugar)){
+                trabajo.push({donde: lugar,ruta: ruta.concat(lugar)})
+            }
+        }
+    }
+}
+
+function roboOrientadoAMetas({lugar,paquetes}, ruta){
+    if (ruta.length == 0){
+        let paquete = paquetes[0];
+        if (paquete.lugar != lugar){
+            ruta = encontrarRuta(grafoCamino, lugar, paquete.lugar);
+        } else {
+            ruta = encontrarRuta(grafoCamino,lugar, paquete.direccion);
+        }
+    }
+    return {direccion: ruta[0], memoria: ruta.slice(1)};
+}
