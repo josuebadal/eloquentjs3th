@@ -1,5 +1,7 @@
+"use strict";
 //Ejercicio de la pagina 142 Manejo de Excepciones
 //se requiere del index para hacer las pruebas
+
 
 function pedirDireccion(pregunta){
     let resultado = prompt(pregunta);
