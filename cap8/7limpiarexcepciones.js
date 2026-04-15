@@ -16,9 +16,17 @@ function obtenerCuenta(){
 
 function transferir(desde, cantidad){
     if (cuentas[desde] < cantidad) return;
-    cuentas[desde] -= cantidad;
-    cuentas[obtenerCuenta()] += cantidad;
-    return cuentas;
+    let progreso = 0;
+    try {
+        cuentas[desde] -= cantidad;
+        progreso = 1;
+        cuentas[obtenerCuenta()] += cantidad;
+        progreso = 2;
+    } finally {
+        if (progreso == 1){
+            cuentas[desde] += cantidad;
+        }
+    }
 }
 
 console.log(cuentas);
