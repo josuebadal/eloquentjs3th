@@ -57,3 +57,18 @@ function menosUno(coincidencia, cantidad, unidad){
     return cantidad + " " + unidad;
 }
 console.log(almacen.replace(/(\d+) (\w+)/g, menosUno));
+
+//PAGINA 163 DEL PDF
+console.log("INICIA EJERCICIO DE CODICIA");
+function removerComentarios(codigo){
+    return codigo.replace(/\/\/.*|\/\*[^]*?\*\//g, "");
+    //return codigo.replace(/\/\/.*|\/\*[^]*\*\//g, "");
+}
+console.log(removerComentarios("1 + /* 2 */3"));
+// → 1 + 3
+console.log(removerComentarios("x = 10; // ten!"));
+// → x = 10;
+console.log(removerComentarios("1 /* a */+/* b */ 1"));
+// → 1 1
+console.log(removerComentarios("1 /* a */+/* b */ 1"));
+// → 1 + 1
