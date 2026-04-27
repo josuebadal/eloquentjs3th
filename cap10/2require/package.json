@@ -1,0 +1,16 @@
+{
+  "name": "2require",
+  "version": "1.0.0",
+  "description": "",
+  "main": "2Require.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-names": "^0.1.13",
+    "ordinal": "^1.0.3"
+  }
+}

@@ -1,0 +1,1 @@
+export default ["Invierno", "Primavera", "Verano", "Otoño"];
