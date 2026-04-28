@@ -1,0 +1,40 @@
+[33mdddf873[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m avances del capitulo 11
+[33m847ea40[m Ejercicios nuevos y finalizados
+[33mde60dd4[m apuentes para todo el libro
+[33m53d989f[m Se agregan los ejercicios finales
+[33m8bcd86c[m Modificaciones de expresiones regulares cap9
+[33m7643e15[m Actulizacion e ingtegracion de funciones regexp
+[33mb6cb5b7[m Ejer de cadenas pag 152 cap 9
+[33m9d3f915[m Ejercicios del cap9 pag 151
+[33m0fa26d1[m Ejercicios del libro cap 9 pag 151
+[33m7b71514[m Ejer 2 de Eloquent para buscar caracteres
+[33mcaa50aa[m feact add expresiones regulares cap 9
+[33me01680a[m Add the function CajaBloqueada.js in the charter 8 exercise final por answer
+[33m01c529e[m Se agrega la funcion Multiplicador del cap 8
+[33m2183313[m Se agrega la funcion para Captura Selectiva de Datos con Try,Catch y Break
+[33m2614aeb[m Modificacion del script para la funcion 8ErroresDeEntrada.js
+[33m7805d87[m Se agrega TRY y FINALLY para validaciones
+[33m589baa5[m Se creacion la funcion que limpia excepciones
+[33m4cea791[m Se modifico la referencia para un script
+[33m3c9c7f4[m Apuntamos a otro archivo para validacion
+[33m48198c4[m Manejo de excepciones con el modo stricto
+[33m1d30d79[m Funciones de prueba sin modo estricto
+[33m560365b[m Ejercicio de prueba que recibe un arreglo y siempre devolvera el ultimo elemento sin importar el tipo de arreglo que reciba
+[33m7d5fc7f[m Index basico para prueba de ejercicios en el navegador
+[33m11be232[m Solicita al usuario teclear un numero para su validacion
+[33m25af57a[m Numero a String, ejercicio del capitulo 8 con un error para hacer debuggin
+[33m0da9388[m Agrega la funcion Persona con modo stricto para validar errores del capitulo 8
+[33m2fb4d70[m funcion puedesDetectarElProblema con el modo stricto
+[33mcf3ab30[m Corrige lógica en correRobot
+[33m41283bb[m Agregacion de la nueva funcion completando correRObot
+[33m13898b6[m proyecto robot capitulo 7 completo
+[33mcdd37ce[m Implementacion de la clase Group con add, delethe, has,and de los metodos
+[33m0cc4406[m Implementa clase Conjunto (cap6) con add,delete,has y metodo estatico desde iterable
+[33m540b066[m Creacion de vectores captitulo 6 ejercicio 1
+[33ma6f5af1[m Se agregan pruebas con instanceof para validar herencia en MatrizSimetrica
+[33mefcf133[m Implementa una clase MatrizSimetrica usando herencia
+[33m6c8cd26[m ejer116.js
+[33m40fc01b[m cambio de prueba
+[33m0143a2d[m Agrego archivo ejer115.js
+[33m33e3b35[m agregada segunda linea
+[33mdbc6e2d[m primer commit
