@@ -18,3 +18,23 @@ function saltarEspacio(string){
     if (primero == -1) return "";
     return string.slice(primero);
 }
+
+function aplicarAnalisis(expresion,programa){
+    programa = saltarEspacio(programa);
+    if (programa[0] != "("){
+        return { expresion: expresion, resto: programa};
+    }
+    programa = saltarEspacio(programa.slice(1));
+    expresion = {tipo: "aplicar", operador: expresion, argumentos: []};
+    while (programa[0] != ")"){
+        let argumento = analizarExpresion(programa);
+        expresion.argumentos.push(argumento.expresion);
+        programa = saltarEspacio(argumento.resto);
+        if (programa[0] == ","){
+            programa = saltarEspacio(programa.slice(1));
+        } else if (programa[0] !== ","){
+            throw new SyntaxError("Esperaba ',' o ')'");
+        }
+    }
+    return aplicarAnalisis(expresion,programa.slice(1));
+}
