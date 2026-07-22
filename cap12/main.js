@@ -38,3 +38,7 @@ function aplicarAnalisis(expresion,programa){
     }
     return aplicarAnalisis(expresion,programa.slice(1));
 }
+
+function analizar(programa){
+    
+}
